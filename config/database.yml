@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: mangaPictgram_production
-  username: mangaPictgram
-  password: <%= ENV['MANGAPICTGRAM_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
